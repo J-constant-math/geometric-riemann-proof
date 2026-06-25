@@ -1,3 +1,4 @@
+[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.xxxxxxx-blue)](https://doi.org/10.5281/zenodo.xxxxxxx)
 # A Geometric Proof of the Riemann Hypothesis
 
 **Constant Wall Thickness and Concentricity at Re(s) = 1/2**
