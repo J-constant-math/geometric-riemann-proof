@@ -19,4 +19,35 @@ This repository contains the complete source code, numerical data, and LaTeX sou
 - **Geometric Riemann Theorem**: Under the two axioms, \( \sigma_k \equiv 1/2 \) for all non-trivial zeros.
 
 ## Repository Structure
+.
+├── Jie_Geometric_Riemann_Proof.pdf # Full paper
+├── Jie_Geometric_Riemann_Proof.tex # LaTeX source
+├── fig1_numerical_validation.jpg # Four-panel validation
+├── fig2_concentric_system.jpg # Concentric circle-ellipse system
+├── fig3_residual_convergence.jpg # Residual plot
+├── fig4_deepseek_tikz_replica_v2.jpg # TikZ schematic
+├── table1_latex.tex # LaTeX table code
+├── table1_zero_ellipse_data.csv # Full numerical data (first 20 zeros)
+└── README.md
 
+
+## Numerical Validation
+
+The first 20 non-trivial zeros were tested. The constant wall thickness holds to machine precision (\( \sim 10^{-15} \)), and the perimeter identity error is below \( 10^{-5}\% \).
+
+## License
+
+This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+
+## Citation
+
+```bibtex
+@article{Jie2026GeometricProof,
+  title  = {A Geometric Proof of the Riemann Hypothesis: Constant Wall Thickness and Concentricity at Re(s) = 1/2},
+  author = {Jie, Peiying},
+  year   = {2026},
+  url    = {https://github.com/[your-username]/[new-repo-name]}
+}
+
+Acknowledgements
+The author thanks the open-source mathematical community (LMFDB, Odlyzko) for high-precision zero data, and the AI assistants DeepSeek, Kimi, and Doubao for collaborative theoretical derivation, numerical validation, and logical review.
