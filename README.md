@@ -46,7 +46,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 Int
   title  = {A Geometric Proof of the Riemann Hypothesis: Constant Wall Thickness and Concentricity at Re(s) = 1/2},
   author = {Jie, Peiying},
   year   = {2026},
-  url    = {[https://github.com/[your-username]/[new-repo-name]](https://github.com/J-constant-math/geometric-riemann-proof)}
+  url    = {(https://github.com/J-constant-math/geometric-riemann-proof)}
 }
 
 Acknowledgements
