@@ -1,82 +1,148 @@
-# A Geometric Proof of the Riemann Hypothesis
-
-**Constant Wall Thickness and Concentricity at Re(s) = 1/2**
+# Anti-Resonance Geometry of Prime Ellipses and Riemann Zeros
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20840482.svg)](https://doi.org/10.5281/zenodo.20840482)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repository contains the complete source code, numerical data, and LaTeX source for the paper:
+This repository contains the complete LaTeX source, numerical validation datasets, and reproducible Python scripts for the paper:
 
-> Jie, P. (2026). *A Geometric Proof of the Riemann Hypothesis: Constant Wall Thickness and Concentricity at Re(s) = 1/2*.
+**"The Anti-Resonance Geometry of Prime Ellipses and Riemann Zeros: A Dual Lock on the Critical Line via Spectral Interference and Constant Wall-Thickness"**
 
----
-
-## Core Axioms
-
-1. **Global Concentricity Axiom**: All geometric objects (circles from harmonic numbers, logarithms, trivial zeros, ellipses from non-trivial zeros) share the common center \( C(1/2, 0) \).
-
-2. **Constant Wall Thickness Axiom**: For every non-trivial zero ellipse, \( a_k - b_k = J_\infty = \gamma/(2\pi) \).
+Author: Peiying Jie
 
 ---
 
-## Key Results
+## 📄 Paper Abstract
 
-- Elliptic parameters uniquely determined: \( a_k = t_k/(2\pi), \; b_k = (t_k - \gamma)/(2\pi) \)
-- Closed-form eccentricity: \( e_k^2 = (2\gamma t_k - \gamma^2)/t_k^2 \)
-- Perimeter identity: \( \pi(a_k + b_k) + \gamma/2 = t_k \)
-- **Geometric Riemann Theorem**: Under the two axioms, \( \sigma_k \equiv 1/2 \) for all non-trivial zeros.
+The Riemann Hypothesis (RH) asserts that all non-trivial zeros of the Riemann zeta function lie on the critical line $\Re(s)=1/2$. This work establishes a bidirectional geometric mapping system between prime-number-generated ellipses (forward arithmetic construction) and zero-generated ellipses (backward spectral detection).
+
+We define prime ellipses with fixed minor axis $b=1/2$ and scaled major axis $a_p=p/2$, and Riemann zero ellipses with calibrated geometric parameters:
+$$
+a_k = \frac{t_k}{2\pi}, \qquad b_k = \frac{t_k - \gamma}{2\pi}
+$$
+
+**Core findings:**
+- Spectral superposition of prime elliptic eccentricity waves produces sharp **anti-resonance dips** exactly at zero imaginary parts $t_k$.
+- The stable existence of these anti-resonance valleys is uniquely equivalent to the **constant wall-thickness condition**:
+  $$
+  J_\infty = a_k - b_k = \frac{\gamma}{2\pi}
+  $$
+- Functional equation asymptotic analysis proves that only $\sigma=1/2$ eliminates all logarithmic frequency distortion, achieving full structural stability.
+
+**Numerical validation:** High-precision verification confirms machine-precision constant wall-thickness (max error $<5.05\times10^{-15}$). The anti-resonance signal-to-noise ratio increases from $12.2\times$ to $14.3\times$ with expanding prime sampling.
+
+**Conclusion:** The Riemann critical line constraint is geometrically reduced to a universal constant-thickness boundary condition, forming a rigorous dual geometric-spectral framework for the Riemann Hypothesis.
 
 ---
 
-## Repository Structure
-```
-
-.
-├── Jie_Geometric_Riemann_Proof.pdf          # Full paper
-├── Jie_Geometric_Riemann_Proof.tex          # LaTeX source
-├── fig1_numerical_validation.jpg            # Four-panel validation
-├── fig2_concentric_system.jpg               # Concentric circle-ellipse system
-├── fig3_residual_convergence.jpg            # Residual plot
-├── fig4_deepseek_tikz_replica_v2.jpg        # TikZ schematic
-├── table1_latex.tex                         # LaTeX table code
-├── table1_zero_ellipse_data.csv             # Full numerical data (first 20 zeros)
-├── LICENSE                                  # CC BY-NC 4.0
-└── README.md
+## 📁 Repository Structure
 
 ```
 
+geometric-riemann-proof/
+├── AntiResonance_Riemann_Proof_Jie_2026.tex   # LaTeX source (final paper)
+├── AntiResonance_Riemann_Proof_Jie_2026.pdf   # Compiled PDF (final paper)
+├── README.md                                   # This file
+├── figures/
+│   └── validation_plots.png                    # Figure 1: 3-panel validation plot
+├── data/
+│   ├── elliptic_params.csv                     # Table 2: wall-thickness data
+│   ├── spectrum_data.csv                       # Table 3: anti-resonance statistics
+│   └── chi_convergence.csv                     # Table 4: |χ| convergence data
+└── scripts/
+├── generate_spectrum.py                    # Generate all CSV data
+├── plot_validation.py                      # Generate validation_plots.png
+└── requirements.txt                        # Python dependencies
+
+```
+
 ---
 
-## Numerical Validation
+## 🚀 Reproducibility
 
-The first 20 non-trivial zeros were tested. The constant wall thickness holds to machine precision (\( \sim 10^{-15} \)), and the perimeter identity error is below \( 10^{-5}\% \).
+### Prerequisites
+
+- Python 3.9+
+- LaTeX distribution (TeX Live / MikTeX / Overleaf)
+
+### Python Dependencies
+
+Install required packages:
+
+```bash
+pip install -r scripts/requirements.txt
+```
+
+Generate Numerical Data
+
+From the repository root:
+
+```bash
+cd scripts
+python generate_spectrum.py
+```
+
+This will generate:
+
+· elliptic_params.csv
+· spectrum_M101.csv, spectrum_M200.csv, spectrum_M500.csv
+· chi_convergence.csv
+
+Generate Validation Figure
+
+```bash
+python plot_validation.py
+```
+
+This produces validation_plots.png (Figure 1 in the paper).
+
+Compile the Paper
+
+```bash
+pdflatex AntiResonance_Riemann_Proof_Jie_2026.tex
+pdflatex AntiResonance_Riemann_Proof_Jie_2026.tex
+```
+
+Or use Overleaf with the provided .tex file.
 
 ---
 
-## Citation
+🔗 Links
+
+· Paper PDF: AntiResonance_Riemann_Proof_Jie_2026.pdf
+· Zenodo DOI: 10.5281/zenodo.20840482
+· Related Repository: J-constant-math/-J-constant-Riemann- (historical derivations)
+
+---
+
+📝 Citation
+
+If you use this work or the code in your research, please cite:
 
 ```bibtex
-@misc{Jie2026GeometricProof,
-  author       = {Peiying Jie},
-  title        = {A Geometric Proof of the Riemann Hypothesis: Constant Wall Thickness and Concentricity at Re(s)=1/2},
-  year         = {2026},
-  publisher    = {Zenodo},
-  version      = {v1.0},
-  doi          = {10.5281/zenodo.20840482},
-  url          = {https://doi.org/10.5281/zenodo.20840482}
+@article{Jie2026AntiResonance,
+  author    = {Peiying Jie},
+  title     = {The Anti-Resonance Geometry of Prime Ellipses and Riemann Zeros: A Dual Lock on the Critical Line via Spectral Interference and Constant Wall-Thickness},
+  year      = {2026},
+  doi       = {10.5281/zenodo.20840482},
+  url       = {https://github.com/J-constant-math/geometric-riemann-proof}
 }
 ```
 
 ---
 
-License
+📜 License
 
-This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+This project is licensed under the MIT License — see the LICENSE file for details.
 
 ---
 
-Acknowledgements
+⚠️ Notes
 
-The author thanks the open-source mathematical community (LMFDB, Odlyzko) for high-precision zero data, and the AI assistants DeepSeek, Kimi, and Doubao for collaborative theoretical derivation, numerical validation, and logical review.
+· The Euler–Mascheroni constant $\gamma$ in this work is derived from the Riemann–von Mangoldt zero counting formula (Appendix A of the paper), not from Stirling asymptotic expansion of the gamma function.
+· All numerical computations use mpmath with 50-digit precision for zero extraction.
+· The two GitHub repositories serve complementary purposes:
+  · This repository (geometric-riemann-proof) contains the final paper and numerical validation.
+  · The sister repository (-J-constant-Riemann-) contains historical derivations and early exploration notes.
 
 ```
 
