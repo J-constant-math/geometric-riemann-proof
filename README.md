@@ -109,7 +109,7 @@ Or use Overleaf with the provided .tex file.
 🔗 Links
 
 · Paper PDF: AntiResonance_Riemann_Proof_Jie_2026.pdf
-· Zenodo DOI: 10.5281/zenodo.21577375
+· Zenodo DOI: 10.5281/zenodo.20840482
 · Related Repository: J-constant-math/-J-constant-Riemann- (historical derivations)
 
 ---
