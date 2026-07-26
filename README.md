@@ -1,6 +1,6 @@
 # Anti-Resonance Geometry of Prime Ellipses and Riemann Zeros
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20840482.svg)](https://doi.org/10.5281/zenodo.20840482)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21577375.svg)](https://doi.org/10.5281/zenodo.21577375)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This repository contains the complete LaTeX source, numerical validation datasets, and reproducible Python scripts for the paper:
@@ -109,7 +109,7 @@ Or use Overleaf with the provided .tex file.
 🔗 Links
 
 · Paper PDF: AntiResonance_Riemann_Proof_Jie_2026.pdf
-· Zenodo DOI: 10.5281/zenodo.20840482
+· Zenodo DOI: 10.5281/zenodo.21577375
 · Related Repository: J-constant-math/-J-constant-Riemann- (historical derivations)
 
 ---
@@ -123,7 +123,7 @@ If you use this work or the code in your research, please cite:
   author    = {Peiying Jie},
   title     = {The Anti-Resonance Geometry of Prime Ellipses and Riemann Zeros: A Dual Lock on the Critical Line via Spectral Interference and Constant Wall-Thickness},
   year      = {2026},
-  doi       = {10.5281/zenodo.20840482},
+  doi       = {10.5281/zenodo.21577375},
   url       = {https://github.com/J-constant-math/geometric-riemann-proof}
 }
 ```
